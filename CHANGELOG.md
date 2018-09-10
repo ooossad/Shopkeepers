@@ -4,6 +4,12 @@ Date format: (YYYY-MM-DD)
 ## Next release
 ### Supported MC versions: xxx
 
+## v2.2.2 (2018-09-11)
+### Supported MC versions: 1.12, 1.11, 1.10, 1.9, 1.8
+* Fixed (#522): CME during reload when closing shopkeeper UIs.
+
+If you are updating, please read through the changelogs of the previous few versions! They also contain updating hints (ex. regarding changed messages).
+
 ## v2.2.1 (2018-07-02)
 ### Supported MC versions: 1.12, 1.11, 1.10, 1.9, 1.8
 * Fixed: Some internal shop object ids have slightly changed in the save data. This update is able to load and convert those old ids.
