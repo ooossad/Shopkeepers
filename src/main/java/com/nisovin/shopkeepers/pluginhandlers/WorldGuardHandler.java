@@ -39,11 +39,7 @@ public class WorldGuardHandler {
 		boolean allowShopFlag = false; // false if unset or disallowed
 
 		// get shop flag (might not exist if removed from WorldGuard by now, and not re-implemented by another plugin):
-		Flag<?> shopFlag = Flags.get("allow-shop");
-		if (shopFlag == null) {
-			// try alternative name:
-			shopFlag = Flags.get("enable-shop");
-		}
+		Flag<?> shopFlag = WorldGuard.getInstance().getFlagRegistry().get("allow-shop");
 		if (shopFlag != null) {
 			// check if shop flag is set:
 			if (shopFlag instanceof StateFlag) {
