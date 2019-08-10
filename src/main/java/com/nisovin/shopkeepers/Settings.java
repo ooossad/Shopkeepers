@@ -156,7 +156,7 @@ public class Settings {
 	/*
 	 * Naming
 	 */
-	public static String nameRegex = "[A-Za-z0-9 ]{3,32}";
+	public static String nameRegex = "[A-Za-z0-9ㄱ-ㅎ가-힣]{3,32}";
 	public static boolean namingOfPlayerShopsViaItem = false;
 	public static boolean allowRenamingOfPlayerNpcShops = false;
 
